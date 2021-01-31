@@ -61,10 +61,6 @@ const GitSearch = () => {
             });
     };
 
-    let toggleRepo = () => {
-        setShowRepos(!showRepos);
-    };
-
     let repoArr: string[] = [];
 
     let additionaProfileInfo = additionalInfo(repositories.length);
