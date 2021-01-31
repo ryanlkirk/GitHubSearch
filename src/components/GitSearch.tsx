@@ -105,7 +105,7 @@ const GitSearch = () => {
                             <Button
                                 variant="outlined"
                                 color="primary"
-                                onClick={toggleRepo}
+                                onClick={() => setShowRepos(!showRepos)}
                             >
                                 {!showRepos
                                     ? "Show Repositories"
