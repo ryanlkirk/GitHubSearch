@@ -127,11 +127,11 @@ const GitSearch = () => {
                     <div className="reposDisplay">
                         {repoArr &&
                             showRepos &&
-                            repoArr.map((e, id) => {
+                            repoArr.map((repoName, id) => {
                                 return (
                                     <span key={id} className="repos">
                                         <Typography align="center">
-                                            {e}
+                                            {repoName}
                                         </Typography>
                                     </span>
                                 );
