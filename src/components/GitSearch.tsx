@@ -72,8 +72,8 @@ const GitSearch = () => {
         });
 
     return (
-        <div className="searchBar">
-            <div className="searchBarCard">
+        <section className="searchBar">
+            <article className="searchBarCard">
                 <label htmlFor="site-search">
                     <Typography variant="h6" align="center">
                         GitHub User Search
@@ -110,10 +110,10 @@ const GitSearch = () => {
                         )}
                     </>
                 )}
-            </div>
+            </article>
 
             {showRepos && (
-                <div className="searchBarCard right-content">
+                <article className="searchBarCard right-content">
                     <Typography align="center" variant="h6">
                         Repositories
                     </Typography>
@@ -124,7 +124,7 @@ const GitSearch = () => {
                         </Typography>
                     )}
 
-                    <div className="reposDisplay">
+                    <aside className="reposDisplay">
                         {repoArr &&
                             showRepos &&
                             repoArr.map((repoName, id) => {
@@ -136,10 +136,10 @@ const GitSearch = () => {
                                     </span>
                                 );
                             })}
-                    </div>
-                </div>
+                    </aside>
+                </article>
             )}
-        </div>
+        </section>
     );
 };
 
