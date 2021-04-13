@@ -1,74 +1,98 @@
+/* clears the 'X' from Internet Explorer */
+input[type="search"]::-ms-clear {
+	display: none;
+	width: 0;
+	height: 0;
+}
+input[type="search"]::-ms-reveal {
+	display: none;
+	width: 0;
+	height: 0;
+}
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+	display: none;
+}
+
 html,
 body,
 #root,
 .MainContent {
-    height: 100%;
+	height: 100%;
 }
 body {
-    margin: 25px;
-    background-image: url("./images/office.jpg");
-    background-size: cover;
-    background-attachment: fixed;
+	margin: 25px;
+	background-image: url("./images/office.jpg");
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 .MainContent {
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.searchBar {
-    display: flex;
-    flex-direction: row;
+.searchArea {
+	display: flex;
+	flex-direction: row;
 }
 
 .searchBarCard {
-    display: flex;
-    padding: 50px;
-    min-width: 300px;
-    max-width: 500px;
-    border-radius: 20px;
-    flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(2px);
+	display: flex;
+	padding: 50px;
+	min-width: 300px;
+	max-width: 500px;
+	border-radius: 20px;
+	flex-direction: column;
+	background-color: rgba(255, 255, 255, 0.8);
+	backdrop-filter: blur(2px);
 }
 
 .userprofile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
 }
 
 #profileimg {
-    width: 200px;
-    border: 5px solid #ffffff;
-    border-radius: 50%;
-    margin-bottom: 25px;
+	width: 200px;
+	border: 5px solid #ffffff;
+	border-radius: 50%;
+	margin-bottom: 25px;
 }
 
 .reposDisplay {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 10px;
-    border-radius: 5px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 10px;
+	border-radius: 5px;
 }
 
 .repos {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 3px 0px;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 5px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 3px 0px;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 5px;
 }
 
 .right-content {
-    margin-left: 10px;
+	margin-left: 10px;
+}
+
+.text-grey {
+	color: #808080;
 }
